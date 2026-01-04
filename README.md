@@ -1,5 +1,7 @@
 # A/B Test Statistics Chart 📈
 
+![](./interactive-line-chart.gif)
+
 ## 📄 Feature Overview:
 
 -   Interactive chart for visualizing A/B test results over time
