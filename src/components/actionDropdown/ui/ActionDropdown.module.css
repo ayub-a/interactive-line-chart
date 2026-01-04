@@ -1,0 +1,87 @@
+.root {
+	position: relative;
+}
+
+.list {
+	min-width: 130px;
+
+	position: absolute;
+	top: 45px;
+	left: 0;
+	z-index: 1000;
+
+	display: flex;
+	flex-direction: column;
+
+	background: var(--bg);
+	border: 1px solid var(--border-color);
+	border-radius: 5px;
+	list-style: none;
+	pointer-events: none;
+	opacity: 0;
+	overflow: auto;
+}
+
+.item {
+	min-height: 0;
+	padding: 5px 8px;
+	margin: 4px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	color: var(--text-color);
+	font-size: 14px;
+	text-transform: capitalize;
+	text-wrap: nowrap;
+	border-radius: 4px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: var(--hover-color);
+	}
+}
+
+.label {
+	text-wrap: nowrap;
+
+	&::first-letter {
+		text-transform: uppercase;
+	}
+}
+
+.group_title {
+	display: block;
+	background: var(--bg);
+	text-align: center;
+	font-size: 12px;
+	padding: 4px 8px;
+	color: var(--text-color);
+	font-weight: bold;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.group_list {
+	display: flex;
+	flex-direction: column;
+}
+
+.divider {
+	height: 0;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.icon {
+	fill: var(--primary);
+}
+
+.show_list {
+	opacity: 1;
+	pointer-events: all;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.opened {
+	border-color: var(--primary);
+}

@@ -1,0 +1,58 @@
+.box {
+	width: 14px;
+	height: 14px;
+	border: 1px solid var(--primary);
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon {
+	margin-top: 1px;
+	scale: 0.9;
+
+	& > path {
+		stroke: var(--bg);
+	}
+}
+
+.checked {
+	border-color: var(--primary);
+
+	.box {
+		background: var(--primary);
+	}
+}
+
+.border {
+	border: none;
+}
+
+.checkmark {
+	border: none;
+
+	&.box {
+		background: none;
+	}
+
+	.icon {
+		margin: 0;
+		scale: 1;
+
+		& > path {
+			stroke: var(--primary);
+		}
+	}
+}
+
+.hover {
+	padding: 5px 8px;
+	margin: 4px;
+	border-radius: 4px;
+	min-height: 0;
+
+	&:hover {
+		background-color: var(--hover-color);
+	}
+}

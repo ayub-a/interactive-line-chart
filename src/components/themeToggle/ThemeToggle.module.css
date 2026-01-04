@@ -1,0 +1,18 @@
+.root {
+	text-transform: capitalize;
+}
+
+.icon > path {
+	stroke: var(--primary);
+}
+
+.mode_menu {
+	min-height: auto;
+	padding: 5px 8px;
+	margin: 4px;
+	border-radius: 5px;
+
+	&:hover {
+		background-color: var(--hover-color);
+	}
+}

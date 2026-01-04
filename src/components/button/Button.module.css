@@ -1,0 +1,29 @@
+.root {
+	min-height: 40px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+
+	color: var(--text-color);
+	font-size: 14px;
+	background-color: var(--bg);
+
+	padding: 8px 10px;
+	cursor: pointer;
+}
+
+.outline {
+	border: 1px solid var(--border-color);
+	border-radius: 5px;
+}
+
+.clear {
+	border: none;
+}
+
+.disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}

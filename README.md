@@ -9,7 +9,7 @@
 -   Responsive layout for screens between 671 px and 1300 px
 -   Export to PNG option for reports and presentations
 -   Smooth hover experience with vertical guide line and daily data popup
--   Pinned tooltips: click any data point to lock the tooltip and inspect details
+-   Pinned tooltips: click any data point to lock the tooltip and inspect details (WIP)
 
 <br/>
 
@@ -25,7 +25,7 @@
 
 -   Line style selector: Line, Smooth, Area
 -   Light / Dark theme toggle
--   Export chart to PNG
+-   Export chart to PNG with options
 <!-- -   Zoom / Reset zoom -->
 
 <br/>

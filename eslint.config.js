@@ -21,4 +21,9 @@ export default defineConfig([
 			globals: globals.browser,
 		},
 	},
+	{
+		rules: {
+			"no-explicit-any": false
+		}
+	}
 ])

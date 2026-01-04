@@ -1,0 +1,81 @@
+.root {
+	position: relative;
+}
+
+.list {
+	width: 100%;
+	min-width: 130px;
+
+	position: absolute;
+	top: 45px;
+	left: 0;
+
+	opacity: 0;
+	pointer-events: none;
+	overflow: auto;
+
+	display: flex;
+	flex-direction: column;
+
+	box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+	background: var(--bg);
+	border: 1px solid var(--border-color);
+	border-radius: 5px;
+	list-style: none;
+	z-index: 1000;
+
+	.option {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		color: var(--text-color);
+		font-size: 14px;
+		text-transform: capitalize;
+		text-wrap: nowrap;
+		padding: 5px 8px;
+		margin: 4px;
+		border-radius: 4px;
+		cursor: pointer;
+
+		&:hover {
+			background-color: var(--hover-color);
+		}
+	}
+}
+
+.trigger {
+	.text::first-letter {
+		text-transform: uppercase;
+	}
+
+	.icon > path {
+		stroke: var(--primary);
+	}
+
+	.active {
+		transform: rotate(180deg);
+	}
+}
+
+.radio {
+	position: relative;
+	width: 8px;
+	height: 8px;
+	border: 1px solid var(--primary);
+	border-radius: 100px;
+}
+
+.show_list {
+	opacity: 1;
+	pointer-events: all;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.selected {
+	background: var(--primary);
+}
+
+.opened {
+	border-color: var(--primary);
+}

@@ -1,0 +1,18 @@
+.App {
+	min-height: 100vh;
+	background-color: var(--bg);
+	padding: 2rem;
+}
+
+.app_title {
+	font-size: 25px;
+	color: var(--text-color);
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+@media (max-width: 730px) {
+	.App {
+		padding: 1rem;
+	}
+}
